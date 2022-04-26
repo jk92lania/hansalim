@@ -1,0 +1,744 @@
+[{
+        "title": "쌀/잡곡",
+        "arr": [{
+                "title": "귀리(유/500g)",
+                "price": "5,800",
+                "img": "good_cate01_01.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 1,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(2kg)",
+                "price": "9,100",
+                "img": "good_cate01_02.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 2,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(4kg)",
+                "price": "17,900",
+                "img": "good_cate01_03.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 3,
+                "tag": "인기",
+                "type": 0,
+                "group": 0
+            },
+            {
+                "title": "현미/유(2kg)",
+                "price": "8,650",
+                "img": "good_cate01_04.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 4,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            }
+        ]
+    },
+    {
+        "title": "채소/버섯",
+        "arr": [{
+                "title": "콩나물(300g)",
+                "price": "1,450",
+                "img": "good_cate02_01.jpg",
+                "cate" : "",
+                "link": "#",
+                "buy": "#",
+                "id": 5,
+                "tag": "인기",
+                "type": 1,
+                "group": 1
+            },
+            {
+                "title": "브로콜리(350g)",
+                "price": "3,350",
+                "img": "good_cate02_02.jpg",
+                "cate": [
+                    "유기농",
+                    "무농약"
+                ],
+                "link": "#",
+                "buy": "#",
+                "id": 6,
+                "tag": "인기",
+                "type": 1,
+                "group": 1
+            },
+            {
+                "title": "오이(3개)",
+                "price": "2,950",
+                "img": "good_cate02_03.jpg",
+                "cate": [
+                    "유기농",
+                    "무농약"
+                ],
+                "link": "#",
+                "buy": "#",
+                "id": 7,
+                "tag": "인기",
+                "type": 1,
+                "group": 1
+            },
+            {
+                "title": "당근(1kg)",
+                "price": "3,500",
+                "img": "good_cate02_04.jpg",
+                "cate": [
+                    "유기농",
+                    "무농약"
+                ],
+                "link": "#",
+                "buy": "#",
+                "id": 8,
+                "tag": "인기",
+                "type": 1,
+                "group": 1
+            }
+        ]
+    },
+    {
+        "title": "과일/견과",
+        "arr": [
+            {
+                "title":"딸기(500g)",
+                "price":"5,500",
+                "img":"good_cate03_01.jpg",
+                "cate":[
+                   "유기농",
+                   "무농약"
+                ],
+                "link":"#",
+                "buy":"#",
+                "id":9,
+                "tag":"인기",
+                "type":1,
+                "group":2
+             },
+             {
+                "title":"사과/유(1.5kg)",
+                "price":"14,000",
+                "img":"good_cate03_02.jpg",
+                "cate":[
+                   "유기농"
+                ],
+                "link":"#",
+                "buy":"#",
+                "id":10,
+                "tag":"인기",
+                "type":1,
+                "group":2
+             },
+             {
+                "title":"사과(2kg)",
+                "price":"12,300",
+                "img":"good_cate03_03.jpg",
+                "cate":[""],
+                "link":"#",
+                "buy":"#",
+                "id":11,
+                "tag":"인기",
+                "type": 1,
+                "group":2
+             },
+             {
+                "title":"참외(1kg)",
+                "price":"12,000",
+                "img":"good_cate03_04.jpg",
+                "cate":["유기농", "무농약"],
+                "link":"#",
+                "buy":"#",
+                "id":12,
+                "tag":"인기",
+                "type":1,
+                "group":2
+             }
+        ]
+    },
+    {
+        "title": "축산/축산가공",
+        "arr": [{
+                "title": "귀리(유/500g)",
+                "price": "5,800",
+                "img": "good_cate01_01.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 1,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(2kg)",
+                "price": "9,100",
+                "img": "good_cate01_02.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 2,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(4kg)",
+                "price": "17,900",
+                "img": "good_cate01_03.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 3,
+                "tag": "인기",
+                "type": 0,
+                "group": 0
+            },
+            {
+                "title": "현미/유(2kg)",
+                "price": "8,650",
+                "img": "good_cate01_04.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 4,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            }
+        ]
+    },
+    {
+        "title": "수산/수산가공",
+        "arr": [{
+                "title": "귀리(유/500g)",
+                "price": "5,800",
+                "img": "good_cate01_01.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 1,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(2kg)",
+                "price": "9,100",
+                "img": "good_cate01_02.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 2,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(4kg)",
+                "price": "17,900",
+                "img": "good_cate01_03.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 3,
+                "tag": "인기",
+                "type": 0,
+                "group": 0
+            },
+            {
+                "title": "현미/유(2kg)",
+                "price": "8,650",
+                "img": "good_cate01_04.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 4,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            }
+        ]
+    },
+    {
+        "title": "반찬/양념/가루",
+        "arr": [{
+                "title": "귀리(유/500g)",
+                "price": "5,800",
+                "img": "good_cate01_01.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 1,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(2kg)",
+                "price": "9,100",
+                "img": "good_cate01_02.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 2,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(4kg)",
+                "price": "17,900",
+                "img": "good_cate01_03.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 3,
+                "tag": "인기",
+                "type": 0,
+                "group": 0
+            },
+            {
+                "title": "현미/유(2kg)",
+                "price": "8,650",
+                "img": "good_cate01_04.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 4,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            }
+        ]
+    },
+    {
+        "title": "식사대용/간편식",
+        "arr": [{
+                "title": "귀리(유/500g)",
+                "price": "5,800",
+                "img": "good_cate01_01.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 1,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(2kg)",
+                "price": "9,100",
+                "img": "good_cate01_02.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 2,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(4kg)",
+                "price": "17,900",
+                "img": "good_cate01_03.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 3,
+                "tag": "인기",
+                "type": 0,
+                "group": 0
+            },
+            {
+                "title": "현미/유(2kg)",
+                "price": "8,650",
+                "img": "good_cate01_04.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 4,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            }
+        ]
+    },
+    {
+        "title": "간식/음료/유제품",
+        "arr": [{
+                "title": "귀리(유/500g)",
+                "price": "5,800",
+                "img": "good_cate01_01.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 1,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(2kg)",
+                "price": "9,100",
+                "img": "good_cate01_02.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 2,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(4kg)",
+                "price": "17,900",
+                "img": "good_cate01_03.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 3,
+                "tag": "인기",
+                "type": 0,
+                "group": 0
+            },
+            {
+                "title": "현미/유(2kg)",
+                "price": "8,650",
+                "img": "good_cate01_04.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 4,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            }
+        ]
+    },
+    {
+        "title": "건강/차",
+        "arr": [{
+                "title": "귀리(유/500g)",
+                "price": "5,800",
+                "img": "good_cate01_01.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 1,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(2kg)",
+                "price": "9,100",
+                "img": "good_cate01_02.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 2,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(4kg)",
+                "price": "17,900",
+                "img": "good_cate01_03.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 3,
+                "tag": "인기",
+                "type": 0,
+                "group": 0
+            },
+            {
+                "title": "현미/유(2kg)",
+                "price": "8,650",
+                "img": "good_cate01_04.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 4,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            }
+        ]
+    },
+    {
+        "title": "화장품/오가닉코튼",
+        "arr": [{
+                "title": "귀리(유/500g)",
+                "price": "5,800",
+                "img": "good_cate01_01.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 1,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(2kg)",
+                "price": "9,100",
+                "img": "good_cate01_02.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 2,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(4kg)",
+                "price": "17,900",
+                "img": "good_cate01_03.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 3,
+                "tag": "인기",
+                "type": 0,
+                "group": 0
+            },
+            {
+                "title": "현미/유(2kg)",
+                "price": "8,650",
+                "img": "good_cate01_04.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 4,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            }
+        ]
+    },
+    {
+        "title": "주방/욕실/세정",
+        "arr": [{
+                "title": "귀리(유/500g)",
+                "price": "5,800",
+                "img": "good_cate01_01.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 1,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(2kg)",
+                "price": "9,100",
+                "img": "good_cate01_02.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 2,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(4kg)",
+                "price": "17,900",
+                "img": "good_cate01_03.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 3,
+                "tag": "인기",
+                "type": 0,
+                "group": 0
+            },
+            {
+                "title": "현미/유(2kg)",
+                "price": "8,650",
+                "img": "good_cate01_04.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 4,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            }
+        ]
+    },
+    {
+        "title": "휴지/생활",
+        "arr": [{
+                "title": "귀리(유/500g)",
+                "price": "5,800",
+                "img": "good_cate01_01.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 1,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(2kg)",
+                "price": "9,100",
+                "img": "good_cate01_02.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 2,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(4kg)",
+                "price": "17,900",
+                "img": "good_cate01_03.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 3,
+                "tag": "인기",
+                "type": 0,
+                "group": 0
+            },
+            {
+                "title": "현미/유(2kg)",
+                "price": "8,650",
+                "img": "good_cate01_04.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 4,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            }
+        ]
+    },
+    {
+        "title": "반려동물",
+        "arr": [{
+                "title": "귀리(유/500g)",
+                "price": "5,800",
+                "img": "good_cate01_01.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 1,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(2kg)",
+                "price": "9,100",
+                "img": "good_cate01_02.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 2,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(4kg)",
+                "price": "17,900",
+                "img": "good_cate01_03.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 3,
+                "tag": "인기",
+                "type": 0,
+                "group": 0
+            },
+            {
+                "title": "현미/유(2kg)",
+                "price": "8,650",
+                "img": "good_cate01_04.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 4,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            }
+        ]
+    },
+    {
+        "title": "대용량/어린이집",
+        "arr": [{
+                "title": "귀리(유/500g)",
+                "price": "5,800",
+                "img": "good_cate01_01.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 1,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(2kg)",
+                "price": "9,100",
+                "img": "good_cate01_02.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 2,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            },
+            {
+                "title": "백미/유(4kg)",
+                "price": "17,900",
+                "img": "good_cate01_03.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 3,
+                "tag": "인기",
+                "type": 0,
+                "group": 0
+            },
+            {
+                "title": "현미/유(2kg)",
+                "price": "8,650",
+                "img": "good_cate01_04.jpg",
+                "cate": ["유기농"],
+                "link": "#",
+                "buy": "#",
+                "id": 4,
+                "tag": "인기",
+                "type": 1,
+                "group": 0
+            }
+        ]
+    }
+]

@@ -1631,12 +1631,12 @@ body {
     bottom: 45px;
 }
 
-.copartner-right .good-tag-red {
+.good-tag-red {
     font-size: 0;
     background: #e14949;
 }
 
-.copartner-right .good-tag-red::before {
+.good-tag-red::before {
     content: "알뜰";
     font-size: 14px;
 }
@@ -1857,8 +1857,8 @@ body {
 .popular-bottom {
     position: relative;
     display: block;
-
 }
+
 
 /* 브랜드관 */
 .brand {
