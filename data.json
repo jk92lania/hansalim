@@ -10,7 +10,7 @@
                 "id": 1,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 1
             },
             {
                 "title": "백미/유(2kg)",
@@ -22,7 +22,7 @@
                 "id": 2,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 1
             },
             {
                 "title": "백미/유(4kg)",
@@ -34,7 +34,7 @@
                 "id": 3,
                 "tag": "인기",
                 "type": 0,
-                "group": 0
+                "group": 1
             },
             {
                 "title": "현미/유(2kg)",
@@ -46,7 +46,7 @@
                 "id": 4,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 1
             }
         ]
     },
@@ -62,7 +62,7 @@
                 "id": 5,
                 "tag": "인기",
                 "type": 1,
-                "group": 1
+                "group": 2
             },
             {
                 "title": "브로콜리(350g)",
@@ -77,7 +77,7 @@
                 "id": 6,
                 "tag": "인기",
                 "type": 1,
-                "group": 1
+                "group": 2
             },
             {
                 "title": "오이(3개)",
@@ -92,7 +92,7 @@
                 "id": 7,
                 "tag": "인기",
                 "type": 1,
-                "group": 1
+                "group": 2
             },
             {
                 "title": "당근(1kg)",
@@ -107,7 +107,7 @@
                 "id": 8,
                 "tag": "인기",
                 "type": 1,
-                "group": 1
+                "group": 2
             }
         ]
     },
@@ -127,7 +127,7 @@
                 "id":9,
                 "tag":"인기",
                 "type":1,
-                "group":2
+                "group":3
              },
              {
                 "title":"사과/유(1.5kg)",
@@ -141,7 +141,7 @@
                 "id":10,
                 "tag":"인기",
                 "type":1,
-                "group":2
+                "group":3
              },
              {
                 "title":"사과(2kg)",
@@ -153,7 +153,7 @@
                 "id":11,
                 "tag":"인기",
                 "type": 1,
-                "group":2
+                "group":3
              },
              {
                 "title":"참외(1kg)",
@@ -165,579 +165,580 @@
                 "id":12,
                 "tag":"인기",
                 "type":1,
-                "group":2
+                "group":3
              }
         ]
     },
     {
         "title": "축산/축산가공",
-        "arr": [{
-                "title": "귀리(유/500g)",
-                "price": "5,800",
-                "img": "good_cate01_01.jpg",
-                "cate": ["유기농"],
+        "arr": [
+            {
+                "title": "유정란(15알/국내산)",
+                "price": "6,250",
+                "img": "good_cate04_01.jpg",
+                "cate":[""],
                 "link": "#",
                 "buy": "#",
-                "id": 1,
+                "id": 13,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 4
             },
             {
-                "title": "백미/유(2kg)",
-                "price": "9,100",
-                "img": "good_cate01_02.jpg",
-                "cate": ["유기농"],
+                "title": "유정란(안심대안사료/15알)",
+                "price": "7,550",
+                "img": "good_cate04_02.jpg",
+                "cate":[""],
                 "link": "#",
                 "buy": "#",
-                "id": 2,
+                "id": 14,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 4
             },
             {
-                "title": "백미/유(4kg)",
-                "price": "17,900",
-                "img": "good_cate01_03.jpg",
-                "cate": ["유기농"],
+                "title": "양념닭갈비(500g)",
+                "price": "12,100",
+                "img": "good_cate04_03.jpg",
+                "cate":[""],
                 "link": "#",
                 "buy": "#",
-                "id": 3,
-                "tag": "인기",
-                "type": 0,
-                "group": 0
-            },
-            {
-                "title": "현미/유(2kg)",
-                "price": "8,650",
-                "img": "good_cate01_04.jpg",
-                "cate": ["유기농"],
-                "link": "#",
-                "buy": "#",
-                "id": 4,
+                "id": 15,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 4
+            },
+            {
+                "title": "구운유정란(6알)",
+                "price": "3,900",
+                "img": "good_cate04_04.jpg",
+                "cate":[""],
+                "link": "#",
+                "buy": "#",
+                "id": 16,
+                "tag": "인기",
+                "type": 1,
+                "group": 4
             }
         ]
     },
     {
         "title": "수산/수산가공",
         "arr": [{
-                "title": "귀리(유/500g)",
-                "price": "5,800",
-                "img": "good_cate01_01.jpg",
-                "cate": ["유기농"],
+                "title": "구운전장김(40g)",
+                "price": "2,700",
+                "img": "good_cate05_01.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 1,
+                "id": 17,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 5
             },
             {
-                "title": "백미/유(2kg)",
-                "price": "9,100",
-                "img": "good_cate01_02.jpg",
-                "cate": ["유기농"],
+                "title": "미역줄기(300g)",
+                "price": "1,900",
+                "img": "good_cate05_02.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 2,
+                "id": 18,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 5
             },
             {
-                "title": "백미/유(4kg)",
-                "price": "17,900",
-                "img": "good_cate01_03.jpg",
-                "cate": ["유기농"],
+                "title": "김자반볶음(40g)",
+                "price": "2,300",
+                "img": "good_cate05_03.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 3,
-                "tag": "인기",
-                "type": 0,
-                "group": 0
-            },
-            {
-                "title": "현미/유(2kg)",
-                "price": "8,650",
-                "img": "good_cate01_04.jpg",
-                "cate": ["유기농"],
-                "link": "#",
-                "buy": "#",
-                "id": 4,
+                "id": 19,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 5
+            },
+            {
+                "title": "구운도시락김(4g*9봉)",
+                "price": "3,900",
+                "img": "good_cate05_04.jpg",
+                "cate": [""],
+                "link": "#",
+                "buy": "#",
+                "id": 20,
+                "tag": "인기",
+                "type": 1,
+                "group": 5
             }
         ]
     },
     {
         "title": "반찬/양념/가루",
         "arr": [{
-                "title": "귀리(유/500g)",
-                "price": "5,800",
-                "img": "good_cate01_01.jpg",
-                "cate": ["유기농"],
+                "title": "두부(420g)",
+                "price": "2,150",
+                "img": "good_cate06_01.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 1,
+                "id": 21,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 6
             },
             {
-                "title": "백미/유(2kg)",
-                "price": "9,100",
-                "img": "good_cate01_02.jpg",
-                "cate": ["유기농"],
+                "title": "무농약콩으로만든두부(300g)",
+                "price": "2,500",
+                "img": "good_cate06_02.jpg",
+                "cate": ["무농약원료"],
                 "link": "#",
                 "buy": "#",
-                "id": 2,
+                "id": 22,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 6
             },
             {
-                "title": "백미/유(4kg)",
-                "price": "17,900",
-                "img": "good_cate01_03.jpg",
-                "cate": ["유기농"],
+                "title": "연두부(120g)",
+                "price": "450",
+                "img": "good_cate06_03.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 3,
+                "id": 23,
                 "tag": "인기",
                 "type": 0,
-                "group": 0
+                "group": 6
             },
             {
-                "title": "현미/유(2kg)",
-                "price": "8,650",
-                "img": "good_cate01_04.jpg",
-                "cate": ["유기농"],
+                "title": "찌개용두부(420g)",
+                "price": "2,100",
+                "img": "good_cate06_04.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 4,
+                "id": 24,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 6
             }
         ]
     },
     {
         "title": "식사대용/간편식",
         "arr": [{
-                "title": "귀리(유/500g)",
-                "price": "5,800",
-                "img": "good_cate01_01.jpg",
-                "cate": ["유기농"],
+                "title": "순한 감자라면(110g/1봉)",
+                "price": "1,400",
+                "img": "good_cate07_01.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 1,
+                "id": 25,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 7
             },
             {
-                "title": "백미/유(2kg)",
-                "price": "9,100",
-                "img": "good_cate01_02.jpg",
-                "cate": ["유기농"],
+                "title": "호박죽(280g)",
+                "price": "2,600",
+                "img": "good_cate07_02.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 2,
+                "id": 26,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 7
             },
             {
-                "title": "백미/유(4kg)",
-                "price": "17,900",
-                "img": "good_cate01_03.jpg",
-                "cate": ["유기농"],
+                "title": "동치미냉면육수(330g)",
+                "price": "1,450",
+                "img": "good_cate07_03.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 3,
-                "tag": "인기",
-                "type": 0,
-                "group": 0
-            },
-            {
-                "title": "현미/유(2kg)",
-                "price": "8,650",
-                "img": "good_cate01_04.jpg",
-                "cate": ["유기농"],
-                "link": "#",
-                "buy": "#",
-                "id": 4,
+                "id": 27,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 7
+            },
+            {
+                "title": "채소만두(350g)",
+                "price": "4,600",
+                "img": "good_cate07_04.jpg",
+                "cate": [""],
+                "link": "#",
+                "buy": "#",
+                "id": 28,
+                "tag": "인기",
+                "type": 1,
+                "group": 7
             }
         ]
     },
     {
         "title": "간식/음료/유제품",
         "arr": [{
-                "title": "귀리(유/500g)",
-                "price": "5,800",
-                "img": "good_cate01_01.jpg",
-                "cate": ["유기농"],
+                "title": "유기농우유(종이팩/900ml)",
+                "price": "4,200",
+                "img": "good_cate08_01.jpg",
+                "cate": ["유기가공식품", "우유값재활용"],
                 "link": "#",
                 "buy": "#",
-                "id": 1,
+                "id": 29,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 8
             },
             {
-                "title": "백미/유(2kg)",
-                "price": "9,100",
-                "img": "good_cate01_02.jpg",
-                "cate": ["유기농"],
+                "title": "블루베리요구르트(120ml)",
+                "price": "1,300",
+                "img": "good_cate08_02.jpg",
+                "cate": ["유기가공식품"],
                 "link": "#",
                 "buy": "#",
-                "id": 2,
+                "id": 29,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 8
             },
             {
-                "title": "백미/유(4kg)",
-                "price": "17,900",
-                "img": "good_cate01_03.jpg",
-                "cate": ["유기농"],
+                "title": "유기농딸기요구르트(200ml)",
+                "price": "1,800",
+                "img": "good_cate08_03.jpg",
+                "cate": ["유기가공식품"],
                 "link": "#",
                 "buy": "#",
-                "id": 3,
-                "tag": "인기",
-                "type": 0,
-                "group": 0
-            },
-            {
-                "title": "현미/유(2kg)",
-                "price": "8,650",
-                "img": "good_cate01_04.jpg",
-                "cate": ["유기농"],
-                "link": "#",
-                "buy": "#",
-                "id": 4,
-                "tag": "인기",
+                "id": 30,
+                "tag": "새물품",
                 "type": 1,
-                "group": 0
+                "group": 8
+            },
+            {
+                "title": "감자대롱(50g)",
+                "price": "1,900",
+                "img": "good_cate08_04.jpg",
+                "cate": [""],
+                "link": "#",
+                "buy": "#",
+                "id": 31,
+                "tag": "알뜰",
+                "type": 2,
+                "group": 8
             }
         ]
     },
     {
         "title": "건강/차",
         "arr": [{
-                "title": "귀리(유/500g)",
-                "price": "5,800",
-                "img": "good_cate01_01.jpg",
-                "cate": ["유기농"],
+                "title": "유기농순한발아보리차(10g*18봉)",
+                "price": "3,100",
+                "img": "good_cate09_01.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 1,
+                "id": 32,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 9
             },
             {
-                "title": "백미/유(2kg)",
-                "price": "9,100",
-                "img": "good_cate01_02.jpg",
-                "cate": ["유기농"],
+                "title": "유기보리차(500g)",
+                "price": "3,750",
+                "img": "good_cate09_02.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 2,
+                "id": 33,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 9
             },
             {
-                "title": "백미/유(4kg)",
-                "price": "17,900",
-                "img": "good_cate01_03.jpg",
-                "cate": ["유기농"],
+                "title": "레몬차(460g)",
+                "price": "8,700",
+                "img": "good_cate09_03.jpg",
+                "cate": ["병재사용"],
                 "link": "#",
                 "buy": "#",
-                "id": 3,
-                "tag": "인기",
-                "type": 0,
-                "group": 0
+                "id": 34,
+                "tag": "새물품",
+                "type": 1,
+                "group": 9
             },
             {
-                "title": "현미/유(2kg)",
-                "price": "8,650",
-                "img": "good_cate01_04.jpg",
-                "cate": ["유기농"],
+                "title": "채소액(유기/150ml*30봉)",
+                "price": "27,500",
+                "img": "good_cate09_04.jpg",
+                "cate": ["유기가공식품"],
                 "link": "#",
                 "buy": "#",
-                "id": 4,
+                "id": 35,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 9
             }
         ]
     },
     {
         "title": "화장품/오가닉코튼",
         "arr": [{
-                "title": "귀리(유/500g)",
-                "price": "5,800",
-                "img": "good_cate01_01.jpg",
-                "cate": ["유기농"],
+                "title": "수피아 알로에베라잎즙 수딩젤(150㎖)",
+                "price": "6,700",
+                "img": "good_cate10_01.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 1,
+                "id": 36,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 10
             },
             {
-                "title": "백미/유(2kg)",
-                "price": "9,100",
-                "img": "good_cate01_02.jpg",
-                "cate": ["유기농"],
+                "title": "수피아 누리봄 온몸용로션(250㎖)",
+                "price": "9,800",
+                "img": "good_cate10_02.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 2,
+                "id": 37,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 10
             },
             {
-                "title": "백미/유(4kg)",
-                "price": "17,900",
-                "img": "good_cate01_03.jpg",
-                "cate": ["유기농"],
+                "title": "미효담 비타민 미백앰플(50㎖)",
+                "price": "19,000",
+                "img": "good_cate10_03.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 3,
-                "tag": "인기",
-                "type": 0,
-                "group": 0
+                "id": 38,
+                "tag": "새물품",
+                "type": 1,
+                "group": 10
             },
             {
-                "title": "현미/유(2kg)",
-                "price": "8,650",
-                "img": "good_cate01_04.jpg",
-                "cate": ["유기농"],
+                "title": "수피아 내츄럴 썬로션(50g)",
+                "price": "8,000",
+                "img": "good_cate10_04.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 4,
+                "id": 39,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 10
             }
         ]
     },
     {
         "title": "주방/욕실/세정",
         "arr": [{
-                "title": "귀리(유/500g)",
-                "price": "5,800",
-                "img": "good_cate01_01.jpg",
-                "cate": ["유기농"],
+                "title": "주방용살균수/보충용:400㎖",
+                "price": "3,700",
+                "img": "good_cate11_01.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 1,
+                "id": 40,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 11
             },
             {
-                "title": "백미/유(2kg)",
-                "price": "9,100",
-                "img": "good_cate01_02.jpg",
-                "cate": ["유기농"],
+                "title": "생활살균수/300㎖",
+                "price": "6,100",
+                "img": "good_cate11_02.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 2,
+                "id": 41,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 11
             },
             {
-                "title": "백미/유(4kg)",
-                "price": "17,900",
-                "img": "good_cate01_03.jpg",
-                "cate": ["유기농"],
+                "title": "수피아 손세정제(보충용:500㎖)",
+                "price": "4,800",
+                "img": "good_cate11_03.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 3,
-                "tag": "인기",
-                "type": 0,
-                "group": 0
-            },
-            {
-                "title": "현미/유(2kg)",
-                "price": "8,650",
-                "img": "good_cate01_04.jpg",
-                "cate": ["유기농"],
-                "link": "#",
-                "buy": "#",
-                "id": 4,
+                "id": 42,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 11
+            },
+            {
+                "title": "액상세제(보충용:2.1ℓ)",
+                "price": "10,000",
+                "img": "good_cate11_04.jpg",
+                "cate": [""],
+                "link": "#",
+                "buy": "#",
+                "id": 43,
+                "tag": "인기",
+                "type": 1,
+                "group": 11
             }
         ]
     },
     {
         "title": "휴지/생활",
         "arr": [{
-                "title": "귀리(유/500g)",
-                "price": "5,800",
-                "img": "good_cate01_01.jpg",
-                "cate": ["유기농"],
+                "title": "숲사랑 3겹둥근휴지(18롤)",
+                "price": "11,800",
+                "img": "good_cate12_01.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 1,
+                "id": 44,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 12
             },
             {
-                "title": "백미/유(2kg)",
-                "price": "9,100",
-                "img": "good_cate01_02.jpg",
-                "cate": ["유기농"],
+                "title": "숲사랑 미용사각휴지(3상자)",
+                "price": "3,700",
+                "img": "good_cate12_02.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 2,
+                "id": 45,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 12
             },
             {
-                "title": "백미/유(4kg)",
-                "price": "17,900",
-                "img": "good_cate01_03.jpg",
-                "cate": ["유기농"],
+                "title": "숲사랑 주방휴지(6롤)",
+                "price": "5,900",
+                "img": "good_cate12_03.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 3,
-                "tag": "인기",
-                "type": 0,
-                "group": 0
-            },
-            {
-                "title": "현미/유(2kg)",
-                "price": "8,650",
-                "img": "good_cate01_04.jpg",
-                "cate": ["유기농"],
-                "link": "#",
-                "buy": "#",
-                "id": 4,
+                "id": 46,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 12
+            },
+            {
+                "title": "달맞이생리대 중형(25㎝/16개입)",
+                "price": "4,100",
+                "img": "good_cate12_04.jpg",
+                "cate": [""],
+                "link": "#",
+                "buy": "#",
+                "id": 47,
+                "tag": "인기",
+                "type": 1,
+                "group": 12
             }
         ]
     },
     {
         "title": "반려동물",
         "arr": [{
-                "title": "귀리(유/500g)",
-                "price": "5,800",
-                "img": "good_cate01_01.jpg",
-                "cate": ["유기농"],
+                "title": "반려동물 닭가슴살육포(60g)",
+                "price": "5,000",
+                "img": "good_cate13_01.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 1,
+                "id": 48,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 13
             },
             {
-                "title": "백미/유(2kg)",
-                "price": "9,100",
-                "img": "good_cate01_02.jpg",
-                "cate": ["유기농"],
+                "title": "반려동물 닭가슴살·단호박큐브(60g)",
+                "price": "4,000",
+                "img": "good_cate13_02.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 2,
-                "tag": "인기",
-                "type": 1,
-                "group": 0
-            },
-            {
-                "title": "백미/유(4kg)",
-                "price": "17,900",
-                "img": "good_cate01_03.jpg",
-                "cate": ["유기농"],
-                "link": "#",
-                "buy": "#",
-                "id": 3,
+                "id": 49,
                 "tag": "인기",
                 "type": 0,
-                "group": 0
+                "group": 13
             },
             {
-                "title": "현미/유(2kg)",
-                "price": "8,650",
-                "img": "good_cate01_04.jpg",
-                "cate": ["유기농"],
+                "title": "생협함께 반려견 사료(전연령용/1.6kg)",
+                "price": "15,000",
+                "img": "good_cate13_03.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 4,
-                "tag": "인기",
+                "id": 50,
+                "tag": "새물품",
                 "type": 1,
-                "group": 0
+                "group": 13
+            },
+            {
+                "title": "반려견 영양제(완벽하군/250g)",
+                "price": "21,000",
+                "img": "good_cate13_04.jpg",
+                "cate": [""],
+                "link": "#",
+                "buy": "#",
+                "id": 51,
+                "tag": "새물품",
+                "type": 1,
+                "group": 13
             }
         ]
     },
     {
         "title": "대용량/어린이집",
         "arr": [{
-                "title": "귀리(유/500g)",
+                "title": "닭다리순살(1kg/국내산)",
                 "price": "5,800",
-                "img": "good_cate01_01.jpg",
-                "cate": ["유기농"],
+                "img": "good_cate14_01.jpg",
+                "cate": ["무항생제"],
                 "link": "#",
                 "buy": "#",
-                "id": 1,
+                "id": 52,
                 "tag": "인기",
                 "type": 1,
-                "group": 0
+                "group": 14
             },
             {
-                "title": "백미/유(2kg)",
-                "price": "9,100",
-                "img": "good_cate01_02.jpg",
-                "cate": ["유기농"],
-                "link": "#",
-                "buy": "#",
-                "id": 2,
-                "tag": "인기",
-                "type": 1,
-                "group": 0
-            },
-            {
-                "title": "백미/유(4kg)",
+                "title": "튀김옷돈가스(1kg)",
                 "price": "17,900",
-                "img": "good_cate01_03.jpg",
-                "cate": ["유기농"],
+                "img": "good_cate14_02.jpg",
+                "cate": [""],
                 "link": "#",
                 "buy": "#",
-                "id": 3,
+                "id": 53,
+                "tag": "인기",
+                "type": 1,
+                "group": 14
+            },
+            {
+                "title": "얼린오징어(1kg/4~5마리)",
+                "price": "16,500",
+                "img": "good_cate14_03.jpg",
+                "cate": [""],
+                "link": "#",
+                "buy": "#",
+                "id": 54,
+                "tag": "인기",
+                "type": 1,
+                "group": 14
+            },
+            {
+                "title": "한우분쇄육(안심대안/600g/냉동)",
+                "price": "39,300",
+                "img": "good_cate14_04.jpg",
+                "cate": [""],
+                "link": "#",
+                "buy": "#",
+                "id": 55,
                 "tag": "인기",
                 "type": 0,
-                "group": 0
-            },
-            {
-                "title": "현미/유(2kg)",
-                "price": "8,650",
-                "img": "good_cate01_04.jpg",
-                "cate": ["유기농"],
-                "link": "#",
-                "buy": "#",
-                "id": 4,
-                "tag": "인기",
-                "type": 1,
-                "group": 0
+                "group": 14
             }
         ]
     }
