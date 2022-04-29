@@ -1376,6 +1376,10 @@ body {
     float: right;
 }
 
+.sw-sale {
+    width: 100%;
+}
+
 .sale-right .good-link {
     padding-bottom: 45px;
     margin-left: 0;

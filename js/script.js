@@ -168,21 +168,6 @@ window.onload = function(){
     });
 
 
-    // sale slide
-    let sw_sale = new Swiper('.sw-sale', {
-        slidesPerView : 3,
-        spaceBetween : 10,
-        slidesPerGroup : 3,
-        navigation : {
-            prevEl : '.sw-sale-prev',
-            nextEl : '.sw-sale-next',
-        },
-        pagination : {
-            el : '.sw-sale-pg',
-            type : 'fraction',
-        },
-    });
-
 
     // copartner slide
     let sw_copartner = new Swiper('.sw-copartner', {
@@ -215,27 +200,166 @@ window.onload = function(){
     // 타이틀 데이터
     let data_title = [];    
     let arr_focus = 0;
+    let data_total = 0;
+    let r_total = 8;
+    let r_random_id = [];
+    let recommend_item = [];
+    let s_total = 12;
+    let s_random_id = [];
+    let sale_item = [];
     let popular_section_bt = $('.popular-top .section-bt');
     // http request : 서버에 자료를 요청하는 것
     // http response : 서버에서 응답 오는 것
     fetch('https://jk92lania.github.io/hansalim/data.json')
     .then(res => res.json())
     .then(result => {
+        data_total = result.length * result[0].arr.length;
+        for(let i = 0; i < r_total; i++) {
+            r_random_id[i] = Math.floor(Math.random() * data_total);
+            for(let j = 0; j < r_random_id.length; j++) {
+                if(r_random_id[i] == r_random_id[j]){
+                    let temp = r_random_id[j];
+                    r_random_id[j] = Math.floor(Math.random() * data_total);
+                }                
+            }
+        }
+        for(let i = 0; i < s_total; i++) {
+            s_random_id[i] = Math.floor(Math.random() * data_total);
+            for(let j = 0; j < s_random_id.length; j++) {
+                if(s_random_id[i] == s_random_id[j]){
+                    s_random_id[j] = Math.floor(Math.random() * data_total);
+                }                
+            }
+        }
+
         for(let i = 0; i < result.length; i++){
             let data = result[i];
             data_title[i] = data.title;
             data_arr[i] = data.arr;
+            for(let j = 0; j < data_arr[i].length; j++) {
+                for(let k = 0; k < r_random_id.length; k++) {
+                    if(data_arr[i][j].id == r_random_id[k]){
+                        recommend_item[k] = data_arr[i][j];
+                    } 
+                }
+                for(let k = 0; k < s_random_id.length; k++) {
+                    if(data_arr[i][j].id == s_random_id[k]){
+                        sale_item[k] = data_arr[i][j];
+                    } 
+                }
+            }
         }
 
         // 비동기로 데이터를 가져오기 때문에 정리가 끝나면 목록 출력
         p_change(data_arr[arr_focus]);
+        r_change(recommend_item);
+        s_change(sale_item);
         popular_section_bt.text(`${data_title[arr_focus]} 더보기`);
     });
 
+    let r_wrap1 = $('.good-wrap-1');
+    let r_wrap2 = $('.good-wrap-2');
+
+    function r_change(_arr) {
+        let r_top = [];
+        let r_bot = [];
+        let r_length = _arr.length / 2;
+        for(let i = 0; i < _arr.length; i++) {
+            if(i < r_length) {
+                r_top[i] = _arr[i];
+            }
+            if (i >= r_length){
+                r_bot[i - r_length] = _arr[i];                
+            }
+        }
+        console.log(r_top);
+        console.log(r_bot);
+        r_wrap1.html(makeItem(r_top));
+        r_wrap1.find('a:first-child').css('margin-left', 0);
+        r_wrap2.html(makeItem(r_bot));
+        r_wrap2.find('a:first-child').css('margin-left', 0);
+    }
+
+    let s_wrapper = $('.sw-sale .swiper-wrapper');
+    function s_change(_arr) {
+        let temp = '';
+        for(let i = 0; i < _arr.length; i++) {
+            let temp2 = [];
+            temp2[0] = _arr[i];
+            temp += `<div class="swiper-slide">`
+            temp += makeItem(temp2);
+            temp += `</div>`;
+        }
+        // s_wrapper.html(temp);
+    }
+
+    
+
+    // sale slide
+    let sw_sale = new Swiper('.sw-sale', {
+        slidesPerView : 3,
+        spaceBetween : 10,
+        slidesPerGroup : 3,
+        navigation : {
+            prevEl : '.sw-sale-prev',
+            nextEl : '.sw-sale-next',
+        },
+        pagination : {
+            el : '.sw-sale-pg',
+            type : 'fraction',
+        },
+    });
 
     let p_bottom = $('.popular-bottom');
 
-    function p_change(_arr) {        
+    function p_change(_arr) { 
+        // let temp = '';
+        // for(let i = 0; i < _arr.length; i++) {
+        //     let data = _arr[i];
+        //     temp += `<a href="#" class="good-link">
+        //                         <span class="good-img">
+        //                             <img src="images/${data.img}" alt="제품">`;
+        //     if(data.type == 1) {
+        //         temp += `<span class="good-tag">${data.tag}</span>`;
+        //     }
+        //     if(data.type == 2) {
+        //         temp += `<span class="good-tag good-tag-red">${data.tag}</span>`;
+        //     }
+                                
+        //     temp += `</span>
+    
+        //                         <div class="good-info">`;
+
+        //     if(data.cate) {
+        //         if(data.cate[0] == "") {
+                    
+        //         } else {
+        //             temp += `<span class="good-cate">`;
+        //             for(let j = 0; j < data.cate.length; j++) {
+        //                 console.log('cate leng' + data.cate);
+                        
+        //                 temp += `<em class="good-cate-txt">${data.cate[j]}</em>`;
+        //             }
+        //             temp += `</span>`;
+        //         }
+        //     }
+    
+        //     temp +=  `<span class="good-title">
+        //                                 ${data.title}
+        //                             </span>
+        //                             <span class="good-price">
+        //                                 <b>${data.price}</b>원
+        //                             </span>
+        //                         </div>
+        //                         <button class="good-cart"></button>
+        //                     </a>`;
+            
+        // }
+        p_bottom.html(makeItem(_arr));
+        p_bottom.find('a:first-child').css('margin-left', 0);
+    }
+
+    function makeItem(_arr) {
         let temp = '';
         for(let i = 0; i < _arr.length; i++) {
             let data = _arr[i];
@@ -278,8 +402,7 @@ window.onload = function(){
                             </a>`;
             
         }
-        p_bottom.html(temp);
-        p_bottom.find('a:first-child').css('margin-left', 0);
+        return temp;
     }
 
     // popular tab slide 클릭시
@@ -292,7 +415,6 @@ window.onload = function(){
             popular_bt.removeClass('popular-bt-focus');
             $(this).addClass('popular-bt-focus');
             arr_focus = index;
-            console.log("popular index : " + arr_focus);
             p_change(data_arr[arr_focus]);
 
             let temp = $(this).text();
