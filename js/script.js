@@ -215,14 +215,15 @@ window.onload = function(){
     .then(result => {
         data_total = result.length * result[0].arr.length;
         for(let i = 0; i < r_total; i++) {
-            r_random_id[i] = Math.floor(Math.random() * data_total);
+            r_random_id[i] = Math.floor(Math.random() * data_total) + 1;
             for(let j = 0; j < r_random_id.length; j++) {
                 if(r_random_id[i] == r_random_id[j]){
                     let temp = r_random_id[j];
-                    r_random_id[j] = Math.floor(Math.random() * data_total);
+                    r_random_id[j] = Math.floor(Math.random() * data_total) + 1;
                 }                
             }
         }
+        console.log("random id : " + r_random_id);
         for(let i = 0; i < s_total; i++) {
             s_random_id[i] = Math.floor(Math.random() * data_total);
             for(let j = 0; j < s_random_id.length; j++) {
