@@ -170,7 +170,7 @@ window.onload = function(){
 
 
     // copartner slide
-    let sw_copartner = new Swiper('.sw-copartner', {
+    let sw_copartner_info = {
         slidesPerView : 3,
         spaceBetween : 10,
         slidesPerGroup : 3,
@@ -182,7 +182,7 @@ window.onload = function(){
             el : '.sw-copartner-pg',
             type : 'fraction',
         },
-    });
+    };
 
     // popular slide
     let sw_popular = new Swiper('.sw-popular', {
@@ -201,12 +201,47 @@ window.onload = function(){
     let data_title = [];    
     let arr_focus = 0;
     let data_total = 0;
+    // 이 물품 어떠세요 물품 불러오기
     let r_total = 8;
     let r_random_id = [];
     let recommend_item = [];
+    // 알뜰살품 불러오기
     let s_total = 12;
     let s_random_id = [];
-    let sale_item = [];
+    let sale_item = [];    
+    let s_wrapper = $('.sw-sale .swiper-wrapper');
+    
+    // 조합원 추천물품 불러오기
+    let c_total = 9;
+    let c_random_id = [];
+    let copartner_item = [];
+    let c_wrapper = $('.sw-copartner .swiper-wrapper');
+
+
+    // 중복되지 않는 난수 출력
+    function makeRandom(_arr, _data_total, _total) {
+        for(let i = 0; i < _total; i++) {
+            let num = Math.floor(Math.random() * _data_total) + 1;
+            if(_arr.indexOf(num) === -1) {
+                _arr.push(num);
+            } else {
+                i--;
+            }
+        }
+    }
+
+    // 난수와 동일한 id를 가진 데이터 출력
+    function makeItemList(_cate, _random_id, _items) {
+        for(let j = 0; j < _cate.length; j++) {
+            for(let k = 0; k < _random_id.length; k++) {
+                if(_cate[j].id == _random_id[k]){
+                    _items.push(_cate[j])
+                }
+            }            
+        }
+    }
+
+
     let popular_section_bt = $('.popular-top .section-bt');
     // http request : 서버에 자료를 요청하는 것
     // http response : 서버에서 응답 오는 것
@@ -214,47 +249,28 @@ window.onload = function(){
     .then(res => res.json())
     .then(result => {
         data_total = result.length * result[0].arr.length;
-        for(let i = 0; i < r_total; i++) {
-            r_random_id[i] = Math.floor(Math.random() * data_total) + 1;
-            for(let j = 0; j < r_random_id.length; j++) {
-                if(r_random_id[i] == r_random_id[j]){
-                    let temp = r_random_id[j];
-                    r_random_id[j] = Math.floor(Math.random() * data_total) + 1;
-                }                
-            }
-        }
-        console.log("random id : " + r_random_id);
-        for(let i = 0; i < s_total; i++) {
-            s_random_id[i] = Math.floor(Math.random() * data_total);
-            for(let j = 0; j < s_random_id.length; j++) {
-                if(s_random_id[i] == s_random_id[j]){
-                    s_random_id[j] = Math.floor(Math.random() * data_total);
-                }                
-            }
-        }
+        makeRandom(r_random_id, data_total, r_total); 
+        makeRandom(s_random_id, data_total, s_total); 
+        makeRandom(c_random_id, data_total, c_total); 
+
+        
 
         for(let i = 0; i < result.length; i++){
             let data = result[i];
             data_title[i] = data.title;
             data_arr[i] = data.arr;
-            for(let j = 0; j < data_arr[i].length; j++) {
-                for(let k = 0; k < r_random_id.length; k++) {
-                    if(data_arr[i][j].id == r_random_id[k]){
-                        recommend_item[k] = data_arr[i][j];
-                    } 
-                }
-                for(let k = 0; k < s_random_id.length; k++) {
-                    if(data_arr[i][j].id == s_random_id[k]){
-                        sale_item[k] = data_arr[i][j];
-                    } 
-                }
-            }
+            makeItemList(data_arr[i], r_random_id, recommend_item);
+            makeItemList(data_arr[i], s_random_id, sale_item);
+            makeItemList(data_arr[i], c_random_id, copartner_item);
         }
 
         // 비동기로 데이터를 가져오기 때문에 정리가 끝나면 목록 출력
         p_change(data_arr[arr_focus]);
         r_change(recommend_item);
-        s_change(sale_item);
+        s_change(sale_item, s_wrapper);        
+        let sw_sale = new Swiper('.sw-sale', sw_sale_info);
+        s_change(copartner_item, c_wrapper);   
+        let sw_copartner = new Swiper('.sw-copartner', sw_copartner_info);
         popular_section_bt.text(`${data_title[arr_focus]} 더보기`);
     });
 
@@ -270,7 +286,7 @@ window.onload = function(){
                 r_top[i] = _arr[i];
             }
             if (i >= r_length){
-                r_bot[i - r_length] = _arr[i];                
+                r_bot.push(_arr[i]);                
             }
         }
         console.log(r_top);
@@ -281,8 +297,8 @@ window.onload = function(){
         r_wrap2.find('a:first-child').css('margin-left', 0);
     }
 
-    let s_wrapper = $('.sw-sale .swiper-wrapper');
-    function s_change(_arr) {
+    
+    function s_change(_arr, _wrapper) {
         let temp = '';
         for(let i = 0; i < _arr.length; i++) {
             let temp2 = [];
@@ -291,13 +307,13 @@ window.onload = function(){
             temp += makeItem(temp2);
             temp += `</div>`;
         }
-        // s_wrapper.html(temp);
+        _wrapper.html(temp);
     }
 
     
 
     // sale slide
-    let sw_sale = new Swiper('.sw-sale', {
+    sw_sale_info = {
         slidesPerView : 3,
         spaceBetween : 10,
         slidesPerGroup : 3,
@@ -309,53 +325,13 @@ window.onload = function(){
             el : '.sw-sale-pg',
             type : 'fraction',
         },
-    });
+    };
+    
 
     let p_bottom = $('.popular-bottom');
 
     function p_change(_arr) { 
-        // let temp = '';
-        // for(let i = 0; i < _arr.length; i++) {
-        //     let data = _arr[i];
-        //     temp += `<a href="#" class="good-link">
-        //                         <span class="good-img">
-        //                             <img src="images/${data.img}" alt="제품">`;
-        //     if(data.type == 1) {
-        //         temp += `<span class="good-tag">${data.tag}</span>`;
-        //     }
-        //     if(data.type == 2) {
-        //         temp += `<span class="good-tag good-tag-red">${data.tag}</span>`;
-        //     }
-                                
-        //     temp += `</span>
-    
-        //                         <div class="good-info">`;
-
-        //     if(data.cate) {
-        //         if(data.cate[0] == "") {
-                    
-        //         } else {
-        //             temp += `<span class="good-cate">`;
-        //             for(let j = 0; j < data.cate.length; j++) {
-        //                 console.log('cate leng' + data.cate);
-                        
-        //                 temp += `<em class="good-cate-txt">${data.cate[j]}</em>`;
-        //             }
-        //             temp += `</span>`;
-        //         }
-        //     }
-    
-        //     temp +=  `<span class="good-title">
-        //                                 ${data.title}
-        //                             </span>
-        //                             <span class="good-price">
-        //                                 <b>${data.price}</b>원
-        //                             </span>
-        //                         </div>
-        //                         <button class="good-cart"></button>
-        //                     </a>`;
-            
-        // }
+        
         p_bottom.html(makeItem(_arr));
         p_bottom.find('a:first-child').css('margin-left', 0);
     }
@@ -466,5 +442,22 @@ window.onload = function(){
             el : '.sw-review-pg',
             type : 'fraction',
         },
+    });
+
+
+    // 공지사항, 물품소식 탭메뉴
+    let notice_bt = $('.notice-menu button');
+    let notice_list = $('.notice-wrap ul');
+
+
+    $.each(notice_bt, function(index, item){
+        $(this).click(function(){            
+            notice_bt.removeClass('notice-menu-focus');
+            $(this).addClass('notice-menu-focus');
+            
+            notice_list.removeClass('notice-list-focus');
+            notice_list.eq(index).addClass('notice-list-focus');
+            
+        })
     });
 };

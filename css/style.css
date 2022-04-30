@@ -102,6 +102,8 @@ body {
     overflow: hidden;
 }
 
+
+
 .good-cate-txt {
     position: relative;
     display: block;
@@ -166,6 +168,17 @@ body {
     font-weight: 500;
     color: #fff;
     letter-spacing: -.0375px;
+}
+
+
+.good-tag-red {
+    font-size: 0;
+    background: #e14949;
+}
+
+.good-tag-red::before {
+    content: "알뜰";
+    font-size: 14px;
 }
 
 .good-cart {
@@ -1288,6 +1301,10 @@ body {
     margin-bottom: 35px;
 }
 
+.recommend .good-cate {
+    display: none;
+}
+
 /* 알뜰물품 */
 .sale {
     position: relative;
@@ -1635,14 +1652,9 @@ body {
     bottom: 45px;
 }
 
-.good-tag-red {
-    font-size: 0;
-    background: #e14949;
-}
 
-.good-tag-red::before {
-    content: "알뜰";
-    font-size: 14px;
+.copartner .good-cate {
+    display: none;
 }
 
 /* 인기물품 */
