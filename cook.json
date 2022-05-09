@@ -1,0 +1,34 @@
+[
+    {
+        "cook_id": "1",
+        "cook_pic": "cook_1.jpg",
+        "cook_name": "멍게살",
+        "cook_info": "(180g)",
+        "cook_price": "8300",
+        "cook_link": "#"
+      },
+      {
+        "cook_id": "2",
+        "cook_pic": "cook_2.jpg",
+        "cook_name": "참기름",
+        "cook_info": "(150ml)",
+        "cook_price": "20800",
+        "cook_link": "#"
+      },
+      {
+        "cook_id": "3",
+        "cook_pic": "cook_3.jpg",
+        "cook_name": "싸먹는감태",
+        "cook_info": "(10장)",
+        "cook_price": "5600",
+        "cook_link": "#"
+      },
+      {
+    "cook_id": "4",
+    "cook_pic": "cook_4.jpg",
+    "cook_name": "중파",
+    "cook_info": "(500g)",
+    "cook_price": "1950",
+    "cook_link": "#"
+    }
+]

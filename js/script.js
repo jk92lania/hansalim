@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    
 
     // mymenu 펼침목록
     let mymenu_partner = $('#mymenu-partner');
@@ -83,6 +84,21 @@ window.onload = function(){
     let modal = $('.modal');
     modal_close.click(function () {
         modal.stop().fadeOut(200);
+    });
+
+    // 비주얼 모달창
+    let visual_modal_open = $(".sw-visual-bt");
+    let visual_modal_close = $(".visual-modal-close");
+    let visual_modal = $(".visual-modal");
+
+    visual_modal_open.click(function () {
+        visual_modal.fadeIn();
+        $('html').css('overflow', 'hidden');
+    });
+    
+    visual_modal_close.click(function () {
+        visual_modal.fadeOut();
+        $('html').css('overflow', 'auto');
     });
 
     
@@ -429,6 +445,165 @@ window.onload = function(){
         },
     });
 
+    // 오늘의 요리 관련
+    let cook_wrap;
+    let cook_arr = [];
+    // cook_json
+    let cook_json = 'cook.json';
+    // cook 자료를 배치할 html 요소
+    let cook_list = $('.cook-list');
+    // coook html 텍스트
+    let cook_html = '';
+    // 체크버튼 저장
+    let cook_bt;
+    // 전체 선택 버튼 저장
+    let cook_bt_all = $('.cook-total .cook-bt');
+    // 데이터를 불러들여서 파싱(분해) 한다.
+    fetch(cook_json)
+    .then(res => res.json())
+    .then(result => {
+        for(let i = 0; i < result.length; i++) {
+            cook_arr[i] = result[i];
+            // 미리 숫자로 변경 // json은 문자열로 오기에
+            cook_arr[i].cook_price = parseInt(cook_arr[i].cook_price);
+            // 처음 데이터를 들고올 시 모두 선택되도록
+            cook_arr[i].cook_check = 1;
+        }
+        // cook_html 제작
+        for(let i = 0; i < cook_arr.length; i++) {
+            // 각 객체 데이터가 잘 추출되는지 확인
+            console.log(cook_arr[i]);
+            let temp = cook_arr[i];
+            cook_html += `<li>
+                <button class="cook-bt"></button>
+                <a href="${temp.cook_link}" class="cook-good">
+                    <img src="images/${temp.cook_pic}" alt="${temp.cook_name}">
+                        <p class="cook-good-info">
+                            <span class="cook-good-title">${temp.cook_name}${temp.cook_info}</span>
+                            <span class="cook-good-price">
+                                <b>${temp.cook_price.toLocaleString('ko-KR')}</b>원
+                            </span>
+                        </p>
+                </a>
+            </li>`;        
+        }
+        cook_list.html(cook_html);
+        // html 존재함으로 아래 변수 셋팅
+        cook_bt = $('.cook-list .cook-bt');
+        // cook niceScroll 배치
+        cook_wrap = $('.cook-wrap');
+        cook_wrap.niceScroll({
+            cursoropacitymax: 0.3,
+            cursorwidth: "7px",
+            cursorborderradius: "10px",
+        });
+
+        // 함수는 호이스팅 가능
+        makeCookBt();
+        cookCalc();
+    })
+    .catch()    
+    // 총 계산 값 입력
+    // 총 값이 나오는 자리 html 요소
+    let cook_price_total = $('#cook-price-total');
+
+    let bucket_i = $('.bucket i');
+    let count = 0;
+    let cook_link = $('.cook-link');
+    // 전체갯수
+    let cook_count = $('#cook-count');
+    // 총 선택된 값을 계산하는 함수 생성
+    function cookCalc() {
+        let total = 0;
+        count = 0;
+        for(let i = 0; i < cook_arr.length; i++) {
+            if(cook_arr[i].cook_check == 1) {
+                total += cook_arr[i].cook_price;
+                count++;
+            }
+        }
+        cook_price_total.html(total.toLocaleString());
+        cook_count.html(count);
+    }
+    
+    cook_link.click(function(event){
+        event.preventDefault();
+        bucket_i.text(count);
+        bucket_i.removeClass('ani-updown');
+        setTimeout(function(){
+            bucket_i.addClass('ani-updown'); 
+        }, 500);        
+    })
+
+    // cook 체크기능 관련
+    function makeCookBt() {
+        $.each(cook_bt, function(index, item) {
+            $(this).click(function(event){
+                event.stopPropagation();
+                cook_arr[index].cook_check *= -1;
+                // 체크 모양 변경
+                $(this).toggleClass('cook-bt-false');
+                // 전체가격 계산
+                cookCalc();
+                // 전체 선택 버튼 기능
+                cookAllBt();
+            });
+        });
+    }
+
+    // all 체크가 되었다.
+    let cook_all_check = 1;
+    // 전체 선택 버튼 기능
+    function cookAllBt() {
+        for(let i =0; i < cook_arr.length; i++) {
+            if(cook_arr[i].cook_check != 1) {
+                // 체크가 해제되었다
+                cook_all_check = 0;
+                break;
+            } else {
+                cook_all_check = 1;
+            }
+        }
+        if(cook_all_check == 1) {
+            cook_bt_all.removeClass('cook-bt-false');
+        }else {           
+            cook_bt_all.addClass('cook-bt-false');
+        }
+    }
+
+    // cook 전체 선택 버튼 처리
+    cook_bt_all.click(function(event){
+        event.stopPropagation();
+        if(cook_all_check == 1) {
+            cook_all_check = 0;
+        } else {
+            cook_all_check = 1;
+        }
+        if(cook_all_check == 1) {
+            for(let i = 0; i < cook_arr.length; i ++) {
+                cook_arr[i].cook_check = 1;
+            }
+        }
+        else {
+            for(let i = 0; i < cook_arr.length; i ++) {
+                cook_arr[i].cook_check = -1;
+            }
+        }
+        if(cook_all_check == 1) {
+            cook_bt_all.removeClass('cook-bt-false');
+        }else {           
+            cook_bt_all.addClass('cook-bt-false');
+        }
+        $.each(cook_bt, function(index, item){
+            if(cook_all_check == 1) {
+                $(this).removeClass('cook-bt-false');
+            }else {           
+                $(this).addClass('cook-bt-false');
+            }
+        });
+        cookCalc();
+    })
+
     // review slide
     let sw_reivew = new Swiper('.sw-review', {
         slidesPerView : 3,
@@ -460,4 +635,19 @@ window.onload = function(){
             
         })
     });
-};
+    
+    // family button 구현
+    let footer_site = $('.footer-site');
+    let sitemap = $('.sitemap');
+    let family_close = $('.family-close');
+    footer_site.click(function(event){
+        event.preventDefault();
+        $(this).find('a').toggleClass('footer-site-active');
+        sitemap.toggleClass('sitemap-active');
+    });
+    family_close.click(function(event){
+        event.preventDefault();
+        $(this).find('a').toggleClass('footer-site-active');
+        sitemap.toggleClass('sitemap-active');
+    });
+}
